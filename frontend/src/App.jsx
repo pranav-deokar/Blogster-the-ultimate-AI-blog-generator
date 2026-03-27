@@ -300,6 +300,65 @@ function App() {
             onRegenerateSection={handleRegenerateSection}
           />
         )}
+        {/* Extra Product Section */}
+<motion.div 
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="mt-32 px-6 max-w-6xl mx-auto"
+>
+  <h2 className="text-4xl font-heading text-center mb-12 text-cyber-blue">
+    Why This AI Engine is Different
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-8">
+    {[
+      {
+        title: "Multi-Step AI Pipeline",
+        desc: "Structured generation ensures consistency and SEO performance."
+      },
+      {
+        title: "SEO Intelligence Layer",
+        desc: "Built-in validation for keyword density, readability, and ranking potential."
+      },
+      {
+        title: "Humanized Content",
+        desc: "Advanced prompting creates natural, engaging blogs."
+      }
+    ].map((item, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: i * 0.2 }}
+        viewport={{ once: true }}
+        className="glass rounded-2xl p-6 hover-glow"
+      >
+        <h3 className="text-lg font-bold text-cyber-blue mb-2">
+          {item.title}
+        </h3>
+        <p className="text-gray-400 text-sm">{item.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
+        <motion.div 
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="mt-32 px-6 max-w-4xl mx-auto text-center"
+>
+  <h2 className="text-3xl font-heading mb-6 text-cyber-purple">
+    How It Works
+  </h2>
+
+  <p className="text-gray-300 leading-relaxed">
+    Our system transforms a simple keyword into a fully optimized blog using a structured AI pipeline. 
+    It analyzes search intent, identifies ranking gaps, generates human-like content, and validates SEO performance — all in seconds.
+  </p>
+</motion.div>
       </div>
 
       {/* Status Toast */}
