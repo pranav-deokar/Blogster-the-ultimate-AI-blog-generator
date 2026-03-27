@@ -17,11 +17,11 @@ const KeywordInput = ({ onGenerate, isLoading }) => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-6 sm:top-8 left-1/2 -translate-x-1/2 z-40 w-full max-w-2xl px-4"
+      className="fixed top-6 sm:top-8 left-0 right-0 z-40 w-full flex justify-center px-4"
     >
       <form onSubmit={handleSubmit} className="relative">
-        <div className="glass-strong rounded-3xl p-2 shadow-neon-strong">
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 px-4">
+        <div className="glass-strong rounded-3xl p-2 shadow-neon-strong w-full">
+         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 px-2 sm:px-4">
             <Sparkles className="text-cyber-blue" size={24} />
             <input
               type="text"
