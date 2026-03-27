@@ -7,11 +7,8 @@ console.log('🔍 Checking backend configuration...\n');
 
 // Check if .env exists
 const envPath = path.join(__dirname, '.env');
-if (!fs.existsSync(envPath)) {
-  console.error('❌ ERROR: .env file not found!');
-  console.log('📝 Please copy .env.example to .env and configure it:');
-  console.log('   cp .env.example .env\n');
-  process.exit(1);
+if (process.env.NODE_ENV !== "production") {
+  console.log("Running in development mode");
 }
 
 // Load environment variables
