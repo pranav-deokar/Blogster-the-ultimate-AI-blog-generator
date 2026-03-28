@@ -3,7 +3,8 @@
 ## 🌐 Live Demo
 
 🔗 Frontend (UI): https://blogster-the-ultimate-ai-blog-gener.vercel.app/
-🔗 Backend (API): https://blogster-the-ultimate-ai-blog-generator.onrender.com  
+
+🔗 Backend (API): https://blogster-the-ultimate-ai-blog-generator.onrender.com  (If frontend not working visit backend until it shows {"error":"Route not found"})
 
 
 
