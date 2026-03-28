@@ -2,8 +2,8 @@
 
 ## 🌐 Live Demo
 
-🔗 Frontend (UI): [https://your-frontend-link.com](https://blogster-the-ultimate-ai-blog-gener.vercel.app/)  
-🔗 Backend (API): [https://your-backend-link.com](https://blogster-the-ultimate-ai-blog-generator.onrender.com)  
+🔗 Frontend (UI): https://blogster-the-ultimate-ai-blog-gener.vercel.app/
+🔗 Backend (API): https://blogster-the-ultimate-ai-blog-generator.onrender.com  
 
 
 
